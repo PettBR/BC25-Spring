@@ -3,8 +3,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 public class EmpregadoDTO {
-    @NotNull(message = "IdProjeto é obrigatório")
-    private Integer IdProjeto;
+    @NotNull(message = "Endereço é obrigatório")
+    private Integer IdEndereco;
 
     @NotBlank(message = "Email é obrigatório")
     private String email;
@@ -16,6 +16,15 @@ public class EmpregadoDTO {
     private Double salario;
 
     // Getters e Setters
+
+
+    public Integer getIdEndereco() {
+        return IdEndereco;
+    }
+    public void setIdEndereco(Integer idEndereco) {
+        IdEndereco = idEndereco;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -37,4 +46,3 @@ public class EmpregadoDTO {
         this.salario = salario;
     }
 }
-

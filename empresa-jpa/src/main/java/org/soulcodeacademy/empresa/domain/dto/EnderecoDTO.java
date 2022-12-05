@@ -6,9 +6,6 @@ import javax.validation.constraints.NotNull;
 
 public class EnderecoDTO {
 
-    @NotNull(message= "IdEmpregado é obrigatório" )
-    private Integer idEmpregado;
-
     @NotBlank(message= "Cidade é obrigatório" )
     private String cidade;
 
@@ -17,13 +14,6 @@ public class EnderecoDTO {
 
 
     // Getters e Setters
-    public Integer getIdEmpregado(){
-        return idEmpregado;
-    }
-
-    public void setIdEmpregado(Integer idEndereco){
-        this.idEmpregado = idEmpregado;
-    }
 
     public String getCidade(){
         return cidade;

@@ -44,7 +44,7 @@ public class ProjetoController {
     }
 
     //deletar
-    @DeleteMapping("/projeto/{idProjeto}")
+    @DeleteMapping("/projetos/{idProjeto}")
     public void deletar(@PathVariable Integer idProjeto) {
         this.projetoService.deletar(idProjeto);
     }

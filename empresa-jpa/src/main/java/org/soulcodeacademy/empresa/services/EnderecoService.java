@@ -33,7 +33,6 @@ public class EnderecoService {
     }
 
     public Endereco salvar(EnderecoDTO dto) {
-        // INSERT INTO cargo
         Endereco endereco = new Endereco(null, dto.getCidade(), dto.getUf());
         Endereco enderecoSalvo = this.enderecoRepository.save(endereco);
         return enderecoSalvo;
